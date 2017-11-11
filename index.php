@@ -9,33 +9,32 @@
 		<h1></h1>
 
 		<p></p>
+		<!-- f pattern  -->
 
 
-		<form>
-			first
+		<form method="post" action="survey-processor.php">
+			<h2>Personal Information</h2>
+first
 			last
 			email
-			checkboxes
+
+		<fieldset>
+			<h2></h2>
+
+			<h2></h2>
 			radio
+			<h2></h2>
 			text area
+
 			submit
-			thank you popup
-			<!-- <?php
-	if ($result) {
-		echo "Success! - the query didn't error-out";
+			
+			go to thank you page
+		</fieldset>
 
-?>
-
-
-<?php
-
-	} else {
-		die("Database query failed.");
-	}
-?>
--->
 		</form>
 
+		<!-- site source of our info -->
+		<footer></footer>
 
 </body>
 </html>
