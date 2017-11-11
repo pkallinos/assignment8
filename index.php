@@ -7,6 +7,10 @@
 </head>
 <body>
 		<h1></h1>
+
+		<p></p>
+
+
 		<form>
 			first
 			last
@@ -16,8 +20,21 @@
 			text area
 			submit
 			thank you popup
+			<!-- <?php
+	if ($result) {
+		echo "Success! - the query didn't error-out";
+
+?>
+
+
+<?php
+
+	} else {
+		die("Database query failed.");
+	}
+?>
+-->
 		</form>
-		<p></p>
 
 
 </body>
