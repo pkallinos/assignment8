@@ -10,7 +10,7 @@
 
         <h2>Bio</h2>
         <!-- Image from https://blackgirlnerds.com/linkin-park-meant-depressed-black-girl-nerd/ -->
-        <img src="images/band.jgp" alt="Linkin_Park">
+        <img src="images/band.jpg" alt="Linkin_Park">
 
         <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze.</p>
 
@@ -205,7 +205,14 @@
         <footer>
             <h2>Source</h2>
             <ul>
-                <li><a href = 'http://www.rollingstone.com/music/artists/linkin-park/biography</li>' target = _blank>Bio</a></li>
+                <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography</li>" target=_blank>Bio</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hybrid_Theory" target="_blank"></a>Hybrid Theory</li>
+                <li><a href="https://en.wikipedia.org/wiki/Meteora_(album)" target="_blank"></a>Meteora</li>
+                <li><a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)" target="_blank"></a>Minutes to Midnight</li>
+                <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank"></a>A Thousand Suns</li>
+                <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank"></a>Living Things</li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank"></a>The Hunting Party</li>
+                <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank"></a>One More Light</li>
             </ul>
             
         </footer>
