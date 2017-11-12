@@ -3,13 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>Linkin Park</title>
     </head>
     <body>
-        <h1></h1>
+        <h1>Linkin Park</h1>
 
-        <p></p>
-        <!-- f pattern  -->
+        <h2>Bio</h2>
+        <!-- Image from https://blackgirlnerds.com/linkin-park-meant-depressed-black-girl-nerd/ -->
+        <img src="images/band.jgp" alt="Linkin_Park">
+
+        <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze..</p>
+
+        <h2>Album</h2>
+
+        <h3>Hybrid Theory</h3>
+        <!-- Image from https://en.wikipedia.org/wiki/Hybrid_Theory -->
+        <img src="images/hybrid_theory.jpg" alt="Hybrid_Thoery_Art">
+
+        <p>Hybrid Theory is the debut studio album by American rock band Linkin Park, released on October 24, 2000 through Warner Bros. Records. As of 2017, the album has been certified diamond by the RIAA for sales in the United States of over eleven million units, and peaking at number two on the US Billboard 200.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"One Step Closer"</li>
+            <li>"Crawling"</li>
+            <li>"Papercut"</li>
+            <li>"In the End"</li>
+        </ul>
+
+
+
+        
 
         <form method="POST" action="survey-processor.php">
             
@@ -98,7 +121,13 @@
         </form>
 
         <!-- site source of our info -->
-        <footer></footer>
+        <footer>
+            <h2>Source</h2>
+            <ul>
+                <li><a href = 'http://www.rollingstone.com/music/artists/linkin-park/biography</li>' target = _blank>Bio</a></li>
+            </ul>
+            
+        </footer>
 
     </body>
 </html>
