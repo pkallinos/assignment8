@@ -86,7 +86,7 @@
             <li>"Powerless"</li>
         </ul>
 
-       <h3>The Hunting Party</h3>
+        <h3>The Hunting Party</h3>
 
         <!-- Image From https://en.wikipedia.org/wiki/The_Hunting_Party_(album) -->
         <img src="images/the_hunting_party.jpg" alt="The_Hutning_Party_Art">
@@ -113,10 +113,10 @@
             <li>"Talking to Myself"</li>
             <li>"One More Light"</li>
         </ul>
-   
+
 
         <form method="POST" action="survey-processor.php">
-            
+
             <h2>Basic Information</h2>
 
             <label for="name">First Name:</label>
@@ -128,13 +128,50 @@
             <input type="text" name="lastname" id="lastname">
             <br>
             <br>
-            
+
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
-            
+
             <br>
 
             <fieldset>
+                <h2>Which Linkin Park album is your favorite?</h2>
+
+                <input type="radio" name="favorite-album" id="hybrid-radio" value="hybrid">
+                <label for="hybrid-radio">Hybrid Theory</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="meteora-radio" value="meteora">
+                <label for="meteora-radio">Meteora</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="minutes-radio" value="minutes">
+                <label for="minutes-radio">Minutes to Midnight</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="thousand-radio" value="thousand">
+                <label for="thousand-radio">A Thousand Suns</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="living-radio" value="living">
+                <label for="living-radio">Living Things</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="hunting-radio" value="hunting">
+                <label for="hunting-radio">The Hunting Party</label>
+                <br>
+                <br>
+
+                <input type="radio" name="favorite-album" id="light-radio" value="light">
+                <label for="light-radio">One More Light</label>
+                <br>
+                <br>
+
                 <h2>Which Linkin Park songs do you like?</h2>
 
                 <input type="checkbox" name="crawling-check" id="crawling-check" value="crawling">
@@ -164,38 +201,38 @@
 
                 <h2>Which song is your favorite?</h2>
 
-                <input type="radio" name="favorite" id="crawling-radio" value="crawling">
+                <input type="radio" name="favorite-song" id="crawling-radio" value="crawling">
                 <label for="crawling-radio">Crawling</label>
                 <br>
                 <br>
 
-                <input type="radio" name="favorite" id="intheend-radio" value="intheend">
-                <label for="intheend-check">In the End</label>
+                <input type="radio" name="favorite-song" id="intheend-radio" value="intheend">
+                <label for="intheend-radio">In the End</label>
                 <br>
                 <br>
 
-                <input type="radio" name="favorite" id="faint-radio" value="faint">
-                <label for="faint-check">Faint</label>
+                <input type="radio" name="favorite-song" id="faint-radio" value="faint">
+                <label for="faint-radio">Faint</label>
                 <br>
                 <br>
 
-                <input type="radio" name="favorite" id="numb-radio" value="numb">
-                <label for="numb-check">Numb</label>
+                <input type="radio" name="favorite-song" id="numb-radio" value="numb">
+                <label for="numb-radio">Numb</label>
                 <br>
                 <br>
 
-                <input type="radio" name="favorite" id="what-radio" value="what">
+                <input type="radio" name="favorite-song" id="what-radio" value="what">
                 <label for="what-radio">What I've Done</label>
                 <br>
                 <br>
 
-            </fieldset>
+                <label for="message">Why is this song your favorite?</label>
+                <br>
+                <textarea name="message" id="message"></textarea>
+                <br>
+                <br>
 
-            <label for="message">Why is this song your favorite?</label>
-            <br>
-            <textarea name="message" id="message"></textarea>
-            <br>
-            <br>
+            </fieldset>
 
             <input type="submit" name="submit" id="submit" value="Submit">
 
@@ -214,7 +251,7 @@
                 <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank"></a>The Hunting Party</li>
                 <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank"></a>One More Light</li>
             </ul>
-            
+
         </footer>
 
     </body>
