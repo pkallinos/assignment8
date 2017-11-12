@@ -12,11 +12,12 @@
         <!-- Image from https://blackgirlnerds.com/linkin-park-meant-depressed-black-girl-nerd/ -->
         <img src="images/band.jgp" alt="Linkin_Park">
 
-        <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze..</p>
+        <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze.</p>
 
         <h2>Album</h2>
 
         <h3>Hybrid Theory</h3>
+
         <!-- Image from https://en.wikipedia.org/wiki/Hybrid_Theory -->
         <img src="images/hybrid_theory.jpg" alt="Hybrid_Thoery_Art">
 
@@ -26,13 +27,93 @@
         <ul>
             <li>"One Step Closer"</li>
             <li>"Crawling"</li>
-            <li>"Papercut"</li>
             <li>"In the End"</li>
         </ul>
 
+        <h3>Meteora</h3>
 
+        <!-- Image from https://en.wikipedia.org/wiki/Meteora_(album) -->
+        <img src="images/meteora.jpg" alt="Meteora_Art">
 
-        
+        <p>Meteora is the second studio album by American rock band Linkin Park. It was released on March 25, 2003 through Warner Bros. Records. The album was produced by the band alongside Don Gilmore.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"Somewhere I belong"</li>
+            <li>"Faint"</li>
+            <li>"Numb"</li>
+        </ul>
+
+        <h3>Minutes to Midnight</h3>
+
+        <!-- Image From https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album) -->
+        <img src="images/minutes_to_midnight.jpg" alt="Minutes_to_Midnight_Art">
+
+        <p>Minutes to Midnight is the third studio album by American rock band Linkin Park, released on May 14, 2007, through Warner Bros. Records. The album was produced by Mike Shinoda and Rick Rubin.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"What I've Done"</li>
+            <li>"Bleed It Out"</li>
+            <li>"Shadow of the Day"</li>
+        </ul>
+
+        <h3>A Thousand Suns</h3>
+
+        <!-- Image From https://en.wikipedia.org/wiki/A_Thousand_Suns -->
+        <img src="images/a_thousand_suns.jpg" alt="A_Thousand_Suns_Art">
+
+        <p>A Thousand Suns is the fourth studio album by American rock band Linkin Park. It was released on September 8, 2010, by Warner Bros. Records. The album was written by the band and was produced by Linkin Park vocalist Mike Shinoda and Rick Rubin, who worked together to produce the band's previous studio album Minutes to Midnight (2007).</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"The Catalyst"</li>
+            <li>"Waiting for the End"</li>
+            <li>"Burning in the Skies"</li>
+        </ul>
+
+        <h3>Living Things</h3>
+
+        <!-- Image From https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album) -->
+        <img src="images/living_things" alt="Living_Things_Art">
+
+        <p>Living Things is the fifth studio album by American rock band Linkin Park. It was released under Warner Bros. Records and Machine Shop Recordings on June 20, 2012, in Japan, and throughout the rest of the world during the following week. Production was handled by vocalist Mike Shinoda and Rick Rubin.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"Burn it Down"</li>
+            <li>"Lost in the Echo"</li>
+            <li>"Powerless"</li>
+        </ul>
+
+       <h3>The Hunting Party</h3>
+
+        <!-- Image From https://en.wikipedia.org/wiki/The_Hunting_Party_(album) -->
+        <img src="images/the_hunting_party.jpg" alt="The_Hutning_Party_Art">
+
+        <p>The Hunting Party is the sixth studio album by American rock band Linkin Park. The album, produced by band members Mike Shinoda and Brad Delson, was released by Warner Bros. Records and Machine Shop on June 13, 2014. It is the first album since Meteora (2003) not to be produced with Rick Rubin, after producing the band's previous three studio albums.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"Guitly All the Same"</li>
+            <li>"Until It's Gone"</li>
+            <li>"Wastelands"</li>
+        </ul>
+
+        <h3>One More Light</h3>
+
+        <!-- Image From https://en.wikipedia.org/wiki/One_More_Light -->
+        <img src="images/one_more_light.jpg" alt="One_More_Light_Art">
+
+        <p>One More Light is the seventh studio album by American rock band Linkin Park. It was released on May 19, 2017 through Warner Bros. and Machine Shop. It is the last Linkin Park record produced before lead vocalist Chester Bennington's death on July 20, 2017.</p>
+
+        <h4>Singles</h4>
+        <ul>
+            <li>"Heavy"</li>
+            <li>"Talking to Myself"</li>
+            <li>"One More Light"</li>
+        </ul>
+   
 
         <form method="POST" action="survey-processor.php">
             
