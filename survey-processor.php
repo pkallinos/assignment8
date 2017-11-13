@@ -30,11 +30,10 @@ $faint = mysqli_real_escape_string($connection, $faint);
 $numb = mysqli_real_escape_string($connection, $numb);
 $what = mysqli_real_escape_string($connection, $what);
 $favsong = mysqli_real_escape_string($connection, $favsong);
-//$message = mysqli_real_escape_string($connection, $message);
 
 // Databse query of inserting form data into table
 $query  = "INSERT INTO survey (";
-$query .= "  fname, lname, email, album, crawling, intheend, faint, numb, what, favsong";
+$query .= "  fname, lname, email, album, crawling, intheend, faint, numb, what, favsong, message";
 $query .= ") VALUES (";
 $query .= "  '{$fname}', '{$lname}', '{$email}', '{$album}', '{$crawling}', '{$intheend}', '{$faint}', '{$numb}', '{$what}', '{$favsong}', '{$message}' ";
 $query .= ")";
