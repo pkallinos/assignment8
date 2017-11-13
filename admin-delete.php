@@ -36,14 +36,10 @@
 		}
 		?>
 
-		<ahre
+		<a href="admin.php">Return to Admin Page</a>
 
 	</body>
 	</html>
-
-
-
-
 	
 
 <?php

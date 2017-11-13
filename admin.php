@@ -30,6 +30,7 @@
 		while($survey = mysqli_fetch_assoc($result)) {
 	?>
 
+	<table>
 			<tr>
 				<td><?php echo $pages["counter"]; ?></td>
 				<td><?php echo $pages["fname"]; ?></td>
@@ -39,27 +40,20 @@
 				<td><?php echo $pages["song"]; ?></td>
 				<td><?php echo $pages["favsong"]; ?></td>
 			</tr>
-	
+	</table>
 
-			<form method="Post" action="admin-delete.php">
-				 <label for="couter">Delete Entry (Choose Counter ID):</label>
-            	 <input type="number" class="counter" name="fcounter" id="counter">
+	<form method="Post" action="admin-delete.php">
+		<label for="counter">Delete Entry (Choose Counter ID):</label>
+        <input type="number" class="counter" name="counter" id="counter">
 
-
-	
-	
-
-		</table>
-
-	<a href="index.html">Back to HTML form</a>
+      	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
+    </form>
 
 
 </body>
 </html>
-<?php
-	// 4. Release returned data
-	mysqli_free_result($result);
 
+<?php
 	// 5. Close database connection
 	mysqli_close($connection);
 ?>
