@@ -5,7 +5,7 @@
 	$dbpass = "coffee1N";
 	$dbname = "urcscon3_shanghai";
 
-	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+	$connection = new mysqli('66.147.242.186', 'urcscon3_shangha', 'coffee1N', 'urcscon3_shanghai');
 
 	$query  = "SELECT * ";
 	$query .= "FROM survey ";
@@ -19,7 +19,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Admin Page</title>
 </head>
 <body>
 
@@ -38,21 +38,14 @@
 				<td><?php echo $pages["album"]; ?></td>
 				<td><?php echo $pages["song"]; ?></td>
 				<td><?php echo $pages["favsong"]; ?></td>
-				
-
 			</tr>
-			<?php
-			$counter = $_POST['counter'];
-			$updatedField1 = Trim(stripslashes($_POST['field1']));
-			$updatedField2 =  Trim(stripslashes($_POST['field2']));
+	
 
-			$query  = "UPDATE mytable SET ";
-			$query .= "databaseField1 = '$updatedField1', databaseField1 = '$updatedField2' ";
-			$query .= "WHERE counter = {$counter}";
-			$result = mysqli_query($connection, $query);
-			?>
+			<form method="Post" action="admin-delete.php">
+				 <label for="couter">Delete Entry (Choose Counter ID):</label>
+            	 <input type="number" class="counter" name="fcounter" id="counter">
 
-	<?php } ?>
+
 	
 	
 

@@ -9,6 +9,10 @@
 
     <body>
         <h1>Linkin Park</h1><br>
+<!-- Purpose -->
+        <h2>Purpose</h2>
+        <p>We decided to do our survery on Linkin Park because it is a band that we thought most people would be familiar with. In recent news, lead localist Chester Bennington died and we thought that this survey would pay tribute to him and the band.</p>
+        
 <!-- Bio -->
         <h2>Bio</h2>
         <div class="row align-items-center">
@@ -324,9 +328,6 @@
 
         <!-- site source of our info -->
         <footer>
-
-            <h2>Purpose</h2>
-            <p>We decided to do our survery on Linkin Park because it is a band that we thought most people would be familiar with. In recent news, lead localist Chester Bennington died and we thought that this survey would pay tribute to him and the band.</p>
             
             <h2>Source</h2>
             <ul>
