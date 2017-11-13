@@ -25,9 +25,9 @@
 
 	<h1>Administrator Page</h1>
 
-	<table>
+	<table border>
 	<?php
-		while($survey = mysqli_fetch_assoc($result)) {
+		while($pages = mysqli_fetch_assoc($result)) {
 	?>
 
 
