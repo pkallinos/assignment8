@@ -36,11 +36,12 @@
 				<td><?php echo $pages["fname"]; ?></td>
 				<td><?php echo $pages["lname"]; ?></td>
 				<td><?php echo $pages["email"]; ?></td>
-				<td><?php echo $pages["album"]; ?></td>
-				<td><?php echo $pages["song"]; ?></td>
-				<td><?php echo $pages
-
-				["favsong"]; ?></td>
+				<td><?php echo $pages["crawling"]; ?></td>
+				<td><?php echo $pages["intheend"]; ?></td>
+				<td><?php echo $pages["faint"]; ?></td>
+				<td><?php echo $pages["numb"]; ?></td>
+				<td><?php echo $pages["what"]; ?></td>
+				<td><?php echo $pages["favsong"]; ?></td>
 			</tr>
 	<?php } ?>
 
@@ -48,19 +49,19 @@
 
 
 
-	<form method="Post" action="admin-delete.php">
+	<form method="post" action="admin-delete.php">
 		<label for="counter">Delete Entry (Choose Counter ID):</label>
         <input type="number" class="counter" name="counter" id="counter">
 
       	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
     </form>
 
-	
+    <form method="post" action="admin-update.php">
+    	<label for="counter">Update Entry (Choose Counter ID):</label>
+        <input type="number" class="counter" name="counter" id="counter">
 
-	
-
-
-
+      	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
+    </form>
 
 </body>
 </html>
