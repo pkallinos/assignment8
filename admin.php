@@ -14,14 +14,10 @@
 	$result = mysqli_query($connection, $query);	
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Admin Page</title>
-</head>
-<body>
+	<?php
+	$currentTitle = "Admin Page";
+	include "inc/top.inc";
+	?>
 
 	<h1>Administrator Page</h1>
 
@@ -65,8 +61,9 @@
 
     </form>
 
-</body>
-</html>
+<?php
+include "inc/bottom.inc";
+?>
 
 <?php
 	// 5. Close database connection
