@@ -195,12 +195,12 @@
             <h2>Basic Information</h2>
 
             <label for="name">First Name:</label>
-            <input type="text" class="form-control" name="firstname" id="firstname">
+            <input type="text" class="form-control" name="first" id="firstname">
             <br>
             <br>
 
             <label for="name">Last Name:</label>
-            <input type="text" class="form-control"  name="lastname" id="lastname">
+            <input type="text" class="form-control"  name="last" id="lastname">
             <br>
             <br>
 
