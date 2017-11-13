@@ -17,6 +17,7 @@ include "inc/top.inc";
         <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze.</p>
     </div>
 </div>
+<hr>
 <!-- End Bio -->
 
 <!-- Albums -->
@@ -41,6 +42,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End Hybrid Theory -->
 
 <!-- Meteora -->
@@ -63,6 +65,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End Meteora  -->
 
 <!-- Minutes to Midnight -->
@@ -85,6 +88,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End Minutes to Midnight -->
 
 <!-- A Thousand Suns -->
@@ -107,6 +111,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End A Thousand Suns -->
 
 <!-- Living Things -->
@@ -129,6 +134,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End Living Things -->
 
 <!-- The Hunting Party -->
@@ -151,6 +157,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End The Hunting Party -->
 
 <!-- One More Light -->
@@ -173,6 +180,7 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
+<hr>
 <!-- End One More Light -->
 
 <!-- Start Form -->

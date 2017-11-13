@@ -1,6 +1,6 @@
 <!-- Basic Info -->
 
-<h2>Basic Information</h2>
+<h3>Basic Information</h3>
 
 <div class="form-group">
 <div class="col-md-6 mb-3">
@@ -26,7 +26,7 @@
 <!-- End Basic Info -->
 
 <!-- Favorite Album -->
-<h2>Which Linkin Park album is your favorite?</h2>
+<h3>Which Linkin Park album is your favorite?</h3>
 
 <div class="col-md-6 mb-3">
 <input type="radio" name="favorite-album" id="hybrid-radio" value="hybrid">
@@ -66,7 +66,7 @@
 <!-- End Favorite Album -->
 
 <!-- Songs Section -->
-<h2>Which Linkin Park songs do you like?</h2>
+<h3>Which Linkin Park songs do you like?</h3>
 
 <div class="col-md-6 mb-3">
 <input type="checkbox" name="crawling-check" id="crawling-check" value="crawling">
@@ -95,7 +95,7 @@
 <!-- End Songs -->
 
 <!-- Favorite Song -->
-<h2>Which song is your favorite?</h2>
+<h3>Which song is your favorite?</h3>
 
 <div class="col-md-6 mb-3">
 <input type="radio" name="favorite-song" id="crawling-radio" value="crawling">
