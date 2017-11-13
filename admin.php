@@ -38,7 +38,9 @@
 				<td><?php echo $pages["email"]; ?></td>
 				<td><?php echo $pages["album"]; ?></td>
 				<td><?php echo $pages["song"]; ?></td>
-				<td><?php echo $pages["favsong"]; ?></td>
+				<td><?php echo $pages
+
+				["favsong"]; ?></td>
 			</tr>
 	<?php } ?>
 
@@ -52,6 +54,12 @@
 
       	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
     </form>
+
+	
+
+	
+
+
 
 
 </body>
