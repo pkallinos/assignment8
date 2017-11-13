@@ -31,7 +31,7 @@
 	$favsong = mysqli_real_escape_string($connection, $favsong);
 
 	$query  = "UPDATE survey SET ";
-	$query .= "fname = '$fname', lname = '$lname', email = '$email', album = '$album', crawling = '$crawling', intheend = '$intheend, faint = '$faint', numb = '$numb', what = '$what', favsong = '$favsong' ";
+	$query .= "fname = '$fname', lname = '$lname', email = '$email', album = '$album', crawling = '$crawling', intheend = '$intheend', faint = '$faint', numb = '$numb', what = '$what', favsong = '$favsong', message = '$message' ";
 	$query .= "WHERE counter = {$counter}";
 	$result = mysqli_query($connection, $query);
 	?>

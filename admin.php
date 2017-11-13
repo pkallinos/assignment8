@@ -38,6 +38,7 @@
 				<td><?php echo $pages["numb"]; ?></td>
 				<td><?php echo $pages["what"]; ?></td>
 				<td><?php echo $pages["favsong"]; ?></td>
+				<td><?php echo $pages["message"]; ?></td>
 			</tr>
 	<?php } ?>
 
