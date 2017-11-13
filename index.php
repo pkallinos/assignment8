@@ -114,7 +114,7 @@ include "inc/top.inc";
     <div class="column col-md-4 col-sm-4 col-xs-12">
 
         <!-- Image From https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album) -->
-        <img src="images/living_things" alt="Living_Things_Art">
+        <img src="images/living_things.jpg" alt="Living_Things_Art">
     </div>
 
     <div class="column col-md-8 col-sm-8 col-xs-12">
@@ -136,7 +136,7 @@ include "inc/top.inc";
 <div class="row align-items-center">
     <div class="column col-md-4 col-sm-4 col-xs-12">
         <!-- Image From https://en.wikipedia.org/wiki/The_Hunting_Party_(album) -->
-        <img src="images/the_hunting_party.jpg" alt="The_Hutning_Party_Art">
+        <img src="images/the_hunting_party.jpg" alt="The_Hunting_Party_Art">
     </div>
 
     <div class="column col-md-8 col-sm-8 col-xs-12">
@@ -158,7 +158,7 @@ include "inc/top.inc";
 <div class="row align-items-center">
     <div class="column col-md-4 col-sm-4 col-xs-12">
         <!-- Image From https://en.wikipedia.org/wiki/One_More_Light -->
-        <img src="images/one_more_light.jpg" alt="One_More_Light_Art">
+        <img src="images/one_more_light.jpeg" alt="One_More_Light_Art">
     </div>
 
     <div class="column col-md-8 col-sm-8 col-xs-12">
