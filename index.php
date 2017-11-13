@@ -187,29 +187,26 @@
         <form method="POST" action="survey-processor.php">
 
 <!-- Basic Info -->
-
-
-            <h2>Basic Information</h2>
-
+ <h2>Basic Information</h2>
             <div class="form-group">
             <div class="col-md-6 mb-3">
-            <label for="name">First Name:</label>
-            <input type="text" class="form-control" name="first" id="firstname">
+            <label class="sr-only" for="name">First Name:</label>
+            <input type="text" class="form-control" name="first" id="firstname" placeholder="First Name">
             </div>
 
             <div class="form-group">
             <div class="col-md-6 mb-3">
-            <label for="name">Last Name:</label>
-            <input type="text" class="form-control"  name="last" id="lastname">
+            <label class="sr-only" for="name">Last Name:</label>
+            <input type="text" class="form-control"  name="last" id="lastname" placeholder="Last Name">
             </div>
             </div>
 
             <div class="form-group">
             <div class="col-md-6 mb-3">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" name="email" id="email">
+            <label class="sr-only" for="email">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
             </div>
-            </div>
+            </div> 
 
 <!-- End Basic Info -->
 
