@@ -1,11 +1,10 @@
 <?php
-
 	$dbhost = "localhost";
 	$dbuser = "urcscon3_shangha";
 	$dbpass = "coffee1N";
 	$dbname = "urcscon3_shanghai";
 
-	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+	$connection = new mysqli('66.147.242.186', 'urcscon3_shangha', 'coffee1N', 'urcscon3_shanghai');
 
 
 // Often these are form values in $_POST
