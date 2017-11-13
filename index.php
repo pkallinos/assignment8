@@ -324,6 +324,10 @@
 
         <!-- site source of our info -->
         <footer>
+
+            <h2>Purpose</h2>
+            <p>We decided to do our survery on Linkin Park because it is a band that we thought most people would be familiar with. In recent news, lead localist Chester Bennington died and we thought that this survey would pay tribute to him and the band.</p>
+            
             <h2>Source</h2>
             <ul>
                 <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography</li>" target=_blank>Bio</a></li>
