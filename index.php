@@ -4,31 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/overrides.css">
         <title>Linkin Park</title>
     </head>
 
     <body>
         <h1>Linkin Park</h1><br>
-<!-- Purpose -->
-        <h2>Purpose</h2>
-        <p>We decided to do our survery on Linkin Park because it is a band that we thought most people would be familiar with. In recent news, lead localist Chester Bennington died and we thought that this survey would pay tribute to him and the band.</p>
-        
+
 <!-- Bio -->
-        <h2>Bio</h2>
+        <h2>Summary</h2>
         <div class="row align-items-center">
         <div class="column col-md-4 col-sm-4 col-xs-12">
-        <!-- Image from https://blackgirlnerds.com/linkin-park-meant-depressed-black-girl-nerd/ -->
-        <img src="images/band.jpg" class="img-responsive img-circle" alt="Linkin_Park">
+        <!-- Image from http://www.billboard.com/articles/columns/rock/7325484/linkin-park-2016-album-charity-poker-tournament-interview -->
+        <img src="images/band.jpg" class="bandpic" alt="Linkin_Park">
         </div>
 
         <div class="column col-md-8 col-sm-8 col-xs-12">
+        <p>We decided to do our survery on Linkin Park because it is a band that we thought most people would be familiar with. In recent news, lead localist Chester Bennington died and we thought that this survey would pay tribute to him and the band.</p>
+
         <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze.</p>
         </div>
         </div>
 <!-- End Bio -->
 
 <!-- Albums -->
-        <br><h2>Albums</h2>
+        <h2>Albums</h2>
 
 <!-- Hybrid Theory -->
         <div class="row align-items-center">
@@ -49,7 +49,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End Hybrid Theory -->
 
 <!-- Meteora -->
@@ -72,7 +71,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End Meteora  -->
 
 <!-- Minutes to Midnight -->
@@ -95,7 +93,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End Minutes to Midnight -->
 
 <!-- A Thousand Suns -->
@@ -118,7 +115,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End A Thousand Suns -->
 
 <!-- Living Things -->
@@ -141,7 +137,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End Living Things -->
 
 <!-- The Hunting Party -->
@@ -164,7 +159,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End The Hunting Party -->
 
 <!-- One More Light -->
@@ -187,7 +181,6 @@
         </ul>
         </div>
         </div>
-        <br>
 <!-- End One More Light -->
 
 <!-- Start Form -->
@@ -195,133 +188,145 @@
 
 <!-- Basic Info -->
 
-            <div class="form-group">
+
             <h2>Basic Information</h2>
 
+            <div class="form-group">
+            <div class="col-md-6 mb-3">
             <label for="name">First Name:</label>
             <input type="text" class="form-control" name="first" id="firstname">
-            <br>
-            <br>
+            </div>
 
+            <div class="form-group">
+            <div class="col-md-6 mb-3">
             <label for="name">Last Name:</label>
             <input type="text" class="form-control"  name="last" id="lastname">
-            <br>
-            <br>
+            </div>
+            </div>
 
+            <div class="form-group">
+            <div class="col-md-6 mb-3">
             <label for="email">Email:</label>
             <input type="email" class="form-control" name="email" id="email">
             </div>
-            <br>
+            </div>
+
 <!-- End Basic Info -->
 
 <!-- Favorite Album -->
             <fieldset>
                 <h2>Which Linkin Park album is your favorite?</h2>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="hybrid-radio" value="hybrid">
                 <label for="hybrid-radio">Hybrid Theory</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="meteora-radio" value="meteora">
                 <label for="meteora-radio">Meteora</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="minutes-radio" value="minutes">
                 <label for="minutes-radio">Minutes to Midnight</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="thousand-radio" value="thousand">
                 <label for="thousand-radio">A Thousand Suns</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="living-radio" value="living">
                 <label for="living-radio">Living Things</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="hunting-radio" value="hunting">
                 <label for="hunting-radio">The Hunting Party</label>
-                <br>
-                <br>
+               </div>
 
+               <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-album" id="light-radio" value="light">
                 <label for="light-radio">One More Light</label>
-                <br>
-                <br>
+                </div>
+
 <!-- End Favorite Album -->
 
 <!-- Songs Section -->
                 <h2>Which Linkin Park songs do you like?</h2>
 
+                <div class="col-md-6 mb-3">
                 <input type="checkbox" name="crawling-check" id="crawling-check" value="crawling">
                 <label for="crawling-check">Crawling</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="checkbox" name="intheend-check" id="intheend-check" value="intheend">
                 <label for="intheend-check">In the End</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="checkbox" name="faint-check" id="faint-check" value="faint">
                 <label for="faint-check">Faint</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="checkbox" name="numb-check" id="numb-check" value="numb">
                 <label for="numb-check">Numb</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="checkbox" name="what-check" id="what-check" value="what">
                 <label for="what-check">What I've Done</label>
-                <br>
-                <br>
+                </div>
 <!-- End Songs -->
 
 <!-- Favorite Song -->
                 <h2>Which song is your favorite?</h2>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-song" id="crawling-radio" value="crawling">
                 <label for="crawling-radio">Crawling</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-song" id="intheend-radio" value="intheend">
                 <label for="intheend-radio">In the End</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-song" id="faint-radio" value="faint">
                 <label for="faint-radio">Faint</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-song" id="numb-radio" value="numb">
                 <label for="numb-radio">Numb</label>
-                <br>
-                <br>
+                </div>
 
+                <div class="col-md-6 mb-3">
                 <input type="radio" name="favorite-song" id="what-radio" value="what">
                 <label for="what-radio">What I've Done</label>
-                <br>
-                <br>
+                </div>
+<!-- End Favorite Song -->
 
+<!-- Why Favorite -->
                 <div class="form-group">
+                <div class="col-md-6 mb-3">
                 <label for="message">Why is this song your favorite?</label>
                 <br>
                 <textarea name="message" class="form-control" id="message"></textarea>
-                <br>
-<!-- End Favorite Songs -->
+                </div>
+<!-- End Why Favorite -->
 
             </fieldset>
 
 <!-- Submit Button -->
-            <input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> <br><br>
+            <div class="col-md-6 mb-3">
+            <input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit">
+            </div>
 
         </form>
 <!-- End Form -->
