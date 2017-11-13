@@ -1,74 +1,82 @@
 <?php
-	$dbhost = "localhost";
-	$dbuser = "urcscon3_shangha";
-	$dbpass = "coffee1N";
-	$dbname = "urcscon3_shanghai";
+$dbhost = "localhost";
+$dbuser = "urcscon3_shangha";
+$dbpass = "coffee1N";
+$dbname = "urcscon3_shanghai";
 
-	$connection = new mysqli('66.147.242.186', 'urcscon3_shangha', 'coffee1N', 'urcscon3_shanghai');
-
+$connection = new mysqli('66.147.242.186', 'urcscon3_shangha', 'coffee1N', 'urcscon3_shanghai');
 
 // Often these are form values in $_POST
-	$fname = Trim(stripslashes($_POST['first']));
-	$lname = Trim(stripslashes($_POST['last']));
-	$email = Trim(stripslashes($_POST['email']));
-	$album = Trim(stripslashes($_POST['favorite-album']));
-	$song = Trim(stripslashes($_POST['song']));
-	$favsong = Trim(stripslashes($_POST['favorite-song']));
-	
-	// Escape all strings
-	$fname = mysqli_real_escape_string($connection, $fname);
-	$lname = mysqli_real_escape_string($connection, $lname);
-	$email = mysqli_real_escape_string($connection, $email);
-	$album = mysqli_real_escape_string($connection, $album);
-	$song = mysqli_real_escape_string($connection, $song);
-	$favsong = mysqli_real_escape_string($connection, $favsong);
-	
+$fname = Trim(stripslashes($_POST['first']));
+$lname = Trim(stripslashes($_POST['last']));
+$email = Trim(stripslashes($_POST['email']));
+$album = Trim(stripslashes($_POST['favorite-album']));
+$crawling = Trim(stripslashes($_POST['crawling-check']));
+$intheend = Trim(stripslashes($_POST['intheend-check']));
+$faint = Trim(stripslashes($_POST['faint-check']));
+$numb = Trim(stripslashes($_POST['numb-check']));
+$what = Trim(stripslashes($_POST['what-check']));
+$favsong = Trim(stripslashes($_POST['favorite-song']));
+$message = htmlspecialchars($_POST['message']);
 
-	// 2. Perform database query
-	$query  = "INSERT INTO survey (";
-	$query .= "  fname, lname, email, album, song, favsong";
-	$query .= ") VALUES (";
-	$query .= "  '{$fname}', '{$lname}', '{$email}', '{$album}', '{$song}', '{$favsong}' ";
-	$query .= ")";
+// Escape all strings
+$fname = mysqli_real_escape_string($connection, $fname);
+$lname = mysqli_real_escape_string($connection, $lname);
+$email = mysqli_real_escape_string($connection, $email);
+$album = mysqli_real_escape_string($connection, $album);
+$crawling = mysqli_real_escape_string($connection, $crawling);
+$intheend = mysqli_real_escape_string($connection, $intheend);
+$faint = mysqli_real_escape_string($connection, $faint);
+$numb = mysqli_real_escape_string($connection, $numb);
+$what = mysqli_real_escape_string($connection, $what);
+$favsong = mysqli_real_escape_string($connection, $favsong);
+//$message = mysqli_real_escape_string($connection, $message);
 
-	$result = mysqli_query($connection, $query);
+// Databse query of inserting form data into table
+$query  = "INSERT INTO survey (";
+$query .= "  fname, lname, email, album, crawling, intheend, faint, numb, what, favsong";
+$query .= ") VALUES (";
+$query .= "  '{$fname}', '{$lname}', '{$email}', '{$album}', '{$crawling}', '{$intheend}', '{$faint}', '{$numb}', '{$what}', '{$favsong}', '{$message}' ";
+$query .= ")";
 
-?>
-
-<!doctype html>
-<html>
-<head>
-	<title>Thank you</title>
-</head>
-<body>
-
-	<h1>Status</h1>
-    <h2>Thank you <?php echo $_POST["first"]; ?> for your response!</h2>
-    <a href="index.php">Return back to survery</a>
-
-<?php
-	if ($result) {
-		echo "Thank you for completing the survey";
+$result = mysqli_query($connection, $query);
 
 ?>
 
-
 <?php
-
-	} else {
-		die("Failed to record answers. Please try again");
-	}
+$currentTitle = "Thank you!";
+include "inc/top.inc";
 ?>
-	<a href="admin.php">Content</a>
 
-</body>
-</html>
+<div class="row align-items-center">
+    <div class="column col-md-12 col-sm-12 col-xs-12">
+        <h2>Thank you <?php echo $_POST["first"]; ?> for your response.</h2>
+    </div><!-- close column -->
+</div><!-- close row -->
 
+<div class="row align-items-center">
+    <div class="column col-md-12 col-sm-12 col-xs-12">
+        
+        <?php
+        if ($result) {
+            echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
+        ?>
 
+        <?php
+        } else {
+            die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
+        }
+        ?>
 
-
+        <a href="index.php">Return to survery</a>
+    </div><!-- close column -->
+</div><!-- close row -->
 
 <?php
-	// 5. Close database connection
-	mysqli_close($connection);
+include "inc/bottom.inc";
+?>
+
+<?php
+// 5. Close database connection
+mysqli_close($connection);
 ?>
