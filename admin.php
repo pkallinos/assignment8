@@ -25,12 +25,12 @@
 
 	<h1>Administrator Page</h1>
 
-
+	<table>
 	<?php
 		while($survey = mysqli_fetch_assoc($result)) {
 	?>
 
-	<table>
+
 			<tr>
 				<td><?php echo $pages["counter"]; ?></td>
 				<td><?php echo $pages["fname"]; ?></td>
@@ -40,7 +40,11 @@
 				<td><?php echo $pages["song"]; ?></td>
 				<td><?php echo $pages["favsong"]; ?></td>
 			</tr>
+	<?php } ?>
+
 	</table>
+
+
 
 	<form method="Post" action="admin-delete.php">
 		<label for="counter">Delete Entry (Choose Counter ID):</label>
