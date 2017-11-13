@@ -48,7 +48,7 @@
 	</table>
 
 
-
+	<h2>Delete Entry</h2>	
 	<form method="post" action="admin-delete.php">
 		<label for="counter">Delete Entry (Choose Counter ID):</label>
         <input type="number" class="counter" name="counter" id="counter">
@@ -56,11 +56,13 @@
       	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
     </form>
 
+    <h2>Update Entry</h2>
     <form method="post" action="admin-update.php">
     	<label for="counter">Update Entry (Choose Counter ID):</label>
         <input type="number" class="counter" name="counter" id="counter">
 
-      	<input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
+      	<?php include "inc/survey.inc"; ?>
+
     </form>
 
 </body>
