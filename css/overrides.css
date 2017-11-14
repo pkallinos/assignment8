@@ -27,9 +27,11 @@ body{
 	letter-spacing:2px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing:2px;
+	padding-bottom: 15px;
+	margin-top: 10px;
 }
 
 h2 {
@@ -70,4 +72,26 @@ img {
 
 .page-footer a{
 	color:#D5D5D5;
+}
+
+.page-footer a:hover{
+	color: #3399ff;
+}
+.right-side-source{
+	margin-top: 40px;
+
+}
+
+.credits{
+	margin-top: 20px;
+}
+
+.credits p{
+	line-height: 15px;
+	padding-left: 25px;
+}
+
+.title {
+	padding-left: 20px;
+	font-size: 26px;
 }

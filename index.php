@@ -210,27 +210,33 @@ include "inc/top.inc";
 
             <!--First column-->
             <div class="col-md-6">
-                <h5 class="title">Linkin Park Survey</h5>
-                <p>CSC 174 Project 8 Team Shanghai</p>
-                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
-            </div>
-            <!--/.First column-->
-
-            <!--Second column-->
-            <div class="col-md-6">
-                <h5 class="title">Sources</h5>
+           	 <h5 class="title">Sources</h5>
                 <ul>
                     <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography" target="_blank">Bio</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Hybrid_Theory" target="_blank">Hybrid Theory</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Meteora_(album)" target="_blank">Meteora</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)" target="_blank">Minutes to Midnight</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank">A Thousand Suns</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank">Living Things</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank">The Hunting Party</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank">One More Light</a></li>
                 </ul>
             </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+            	<div class= "right-side-source">
+	               	<ul>
+	                    <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank">A Thousand Suns</a></li>
+	                    <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank">Living Things</a></li>
+	                    <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank">The Hunting Party</a></li>
+	                    <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank">One More Light</a></li>
+	                </ul>
+            	</div>
+            </div>
             <!--/.Second column-->
+
+            	<div class="credits">
+	                <p>CSC 174 Project 8 Team Shanghai</p>
+	                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
+	            </div>
         </div>
     </div>
     <!--/.Footer Links-->
