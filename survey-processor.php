@@ -42,6 +42,7 @@ $result = mysqli_query($connection, $query);
 
 ?>
 
+<div class="success">
 <?php
 $currentTitle = "Thank you!";
 include "inc/top.inc";
@@ -67,9 +68,10 @@ include "inc/top.inc";
         }
         ?>
 
-        <a href="index.php">Return to survery</a>
+        <a href="index.php">Return to survey</a>
     </div><!-- close column -->
 </div><!-- close row -->
+</div>
 
 <?php
 include "inc/bottom.inc";

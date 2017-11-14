@@ -1,11 +1,14 @@
+<div class="top">
 <?php
 $currentTitle = "Assignment 8 - Linkin Park";
 include "inc/top.inc";
 ?>
+</div>
 
 <!-- Bio -->
+<div class="summary">
 <h2>Summary</h2>
-<div class="row align-items-center">
+<div id="summary" class="row align-items-center">
     <div class="column col-md-4 col-sm-4 col-xs-12">
         <!-- Image from http://www.billboard.com/articles/columns/rock/7325484/linkin-park-2016-album-charity-poker-tournament-interview -->
         <img src="images/band.jpg" class="bandpic" alt="Linkin_Park">
@@ -17,10 +20,12 @@ include "inc/top.inc";
         <p>Linkin Park is an American rock band.They formed in 1996, in the Los Angeles suburb of Agoura Hills, around the core of high school friends Mike Shinoda, Brad Delson, and Rob Bourdon. Joe Hahn and Dave Farrell soon joined, as well as a singer named Mark Wakefield, who left by 1999, when the group was called Hybrid Theory. He was replaced by Chester Bennington, an Arizonan who'd been in a group called Grey Daze.</p>
     </div>
 </div>
-<hr>
+</div>
+
 <!-- End Bio -->
 
 <!-- Albums -->
+<div class="albums" id="albums">
 <h2>Albums</h2>
 
 <!-- Hybrid Theory -->
@@ -42,10 +47,10 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End Hybrid Theory -->
 
 <!-- Meteora -->
+<div class="album_sect">
 <div class="row align-items-center">
     <div class="column col-md-4 col-sm-4 col-xs-12">
 
@@ -65,13 +70,13 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
+</div>
 <!-- End Meteora  -->
+
 
 <!-- Minutes to Midnight -->
 <div class="row align-items-center">
     <div class="column col-md-4 col-sm-4 col-xs-12">
-
         <!-- Image From https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album) -->
         <img src="images/minutes_to_midnight.jpg" alt="Minutes_to_Midnight_Art">
     </div>
@@ -88,7 +93,6 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End Minutes to Midnight -->
 
 <!-- A Thousand Suns -->
@@ -111,7 +115,6 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End A Thousand Suns -->
 
 <!-- Living Things -->
@@ -134,7 +137,6 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End Living Things -->
 
 <!-- The Hunting Party -->
@@ -157,7 +159,6 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End The Hunting Party -->
 
 <!-- One More Light -->
@@ -180,10 +181,11 @@ include "inc/top.inc";
         </ul>
     </div>
 </div>
-<hr>
 <!-- End One More Light -->
+</div>
 
 <!-- Start Form -->
+<div class="survey" id="survey">
 <form method="POST" action="survey-processor.php">
 
     <?php
@@ -191,24 +193,46 @@ include "inc/top.inc";
     ?>
 
 </form>
+</div>
 <!-- End Form -->
 
-<!-- site source of our info -->
-<footer>
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
 
-    <h2>Source</h2>
-    <ul>
-        <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography" target="_blank">Bio</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Hybrid_Theory" target="_blank">Hybrid Theory</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Meteora_(album)" target="_blank">Meteora</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)" target="_blank">Minutes to Midnight</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank">A Thousand Suns</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank">Living Things</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank">The Hunting Party</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank">One More Light</a></li>
-    </ul>
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+        <div class="col-md-6">
+                <h5 class="title">Linkin Park Survey</h5>
+                <p>CSC 174 Project 8 Team Shanghai</p>
+                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
+        </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="title">Sources</h5>
+                <ul>
+                    <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography" target="_blank">Bio</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Hybrid_Theory" target="_blank">Hybrid Theory</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Meteora_(album)" target="_blank">Meteora</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)" target="_blank">Minutes to Midnight</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank">A Thousand Suns</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank">Living Things</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank">The Hunting Party</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank">One More Light</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
 
 </footer>
+<!--/.Footer-->
+
 
 <?php
 include "inc/bottom.inc";
