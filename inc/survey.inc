@@ -1,6 +1,6 @@
 <!-- Basic Info -->
 
-<h2>Basic Information</h2>
+<h2>Survey: Basic Information</h2>
 
 <div class="form-group">
 <div class="col-md-6 mb-3">
@@ -135,5 +135,5 @@
 
 <!-- Submit Button -->
 <div class="col-md-6 mb-3">
-<input type="submit" name="submit" class="btn btn-secondary" id="submit" value="Submit">
+<input type="submit" name="submit" class="btn btn btn-primary" id="submit" value="Submit">
 </div>

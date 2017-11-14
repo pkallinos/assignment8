@@ -43,22 +43,34 @@ $currentTitle = "Update Database";
 include "inc/top.inc";
 ?>
 
-<h2>Status</h2>
+<!-- Navigation -->
+<nav class="main-menu">
+    <span class="logo"><a href="#">CSC174 Assignment #8</a></span>
+    <ul>
+        <li><span>Go to: </span></li>
+        <li><a href="index.php">Index</a></li>
+        <li><a href="admin.php">Admin</a></li>
+    </ul>
+</nav>
 
-<?php
-if ($result) {
-?>
-<div>
-    The record <?php echo $_POST['counter'] ?> has been updated.
+<div class="admin">
+    <h2>Status</h2>
+
+    <?php
+    if ($result) {
+    ?>
+    <p>
+        Record #<?php echo $_POST['counter'] ?> has been updated successfully! Thank you for your changes.
+    </p>
+
+    <?php
+    } else {
+        die("<p>ERROR: Database query failed. Please go back and try again.</p>");
+    }
+    ?>
+
+    <a href="admin.php">Return to Admin Page</a>
 </div>
-
-<?php
-             } else {
-    die("Database query failed.");
-}
-?>
-
-<a href="admin.php">Return to Admin Page</a>
 
 <?php
 include "inc/bottom.inc";

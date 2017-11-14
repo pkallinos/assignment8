@@ -3,8 +3,19 @@ $currentTitle = "Assignment 8 - Linkin Park";
 include "inc/top.inc";
 ?>
 
+<!-- Navigation -->
+<nav class="main-menu">
+    <span class="logo"><a href="#">CSC174 Assignment #8</a></span>
+    <ul>
+        <li><span>Go to: </span></li>
+        <li><a class="slide" href="#summary">Summary</a></li>
+        <li><a class="slide" href="#survey">Survey</a></li>
+        <li><a class="slide" href="#credits">Credits</a></li>
+    </ul>
+</nav>
+
 <!-- Bio -->
-<div class="summary">
+<div class="summary" id="summary">
     <h2>Summary</h2>
     <div id="summary" class="row align-items-center">
         <div class="column col-md-4 col-sm-4 col-xs-12">
@@ -200,52 +211,6 @@ include "inc/top.inc";
     </form>
 </div>
 <!-- End Form -->
-
-<!--Footer-->
-<footer class="page-footer center-on-small-only">
-
-    <!--Footer Links-->
-    <div class="container-fluid">
-        <div class="row">
-
-            <!--First column-->
-            <div class="col-md-6">
-           	 <h5 class="title">Sources</h5>
-                <ul>
-                    <li><a href="http://www.rollingstone.com/music/artists/linkin-park/biography" target="_blank">Bio</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Hybrid_Theory" target="_blank">Hybrid Theory</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Meteora_(album)" target="_blank">Meteora</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)" target="_blank">Minutes to Midnight</a></li>
-                </ul>
-            </div>
-            <!--/.First column-->
-
-            <!--Second column-->
-            <div class="col-md-6">
-            	<div class= "right-side-source">
-	               	<ul>
-	                    <li><a href="https://en.wikipedia.org/wiki/A_Thousand_Suns" target="_blank">A Thousand Suns</a></li>
-	                    <li><a href="https://en.wikipedia.org/wiki/Living_Things_(Linkin_Park_album)" target="_blank">Living Things</a></li>
-	                    <li><a href="https://en.wikipedia.org/wiki/The_Hunting_Party_(album)" target="_blank">The Hunting Party</a></li>
-	                    <li><a href="https://en.wikipedia.org/wiki/One_More_Light" target="_blank">One More Light</a></li>
-	                </ul>
-            	</div>
-            </div>
-            <!--/.Second column-->
-
-            <!-- Our names -->	
-        	<div class="credits">
-                <p>CSC 174 Project 8 Team Shanghai</p>
-                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
-            </div>
-            <!--/.Our names -->
-        </div>
-    </div>
-    <!--/.Footer Links-->
-
-</footer>
-<!--/.Footer-->
-
 
 <?php
 include "inc/bottom.inc";

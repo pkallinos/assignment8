@@ -19,63 +19,77 @@ $currentTitle = "Admin Page";
 include "inc/top.inc";
 ?>
 
-<h2>Survey Database Table</h2>
+<!-- Navigation -->
+<nav class="main-menu">
+    <span class="logo"><a href="#">CSC174 Assignment #8</a></span>
+    <ul>
+        <li><span>Go to: </span></li>
+        <li><a href="index.php">Index</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#update">Update</a></li>
+    </ul>
+</nav>
 
-<table border>
-    <tr>      
-        <th>Counter ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>Crawling</th>
-        <th>In the End</th>
-        <th>Faint</th>
-        <th>Numb</th>
-        <th>What I've Done</th>
-        <th>Favorite Song</th>
-        <th>Reason</th>
-    </tr>
+<div class="admin" id="table">
+    <h2>Survey Database Table</h2>
 
-    <?php
-    while($pages = mysqli_fetch_assoc($result)) {
-    ?>
-    
-    <tr>
-        <td><?php echo $pages["counter"]; ?></td>
-        <td><?php echo $pages["fname"]; ?></td>
-        <td><?php echo $pages["lname"]; ?></td>
-        <td><?php echo $pages["email"]; ?></td>
-        <td><?php echo $pages["crawling"]; ?></td>
-        <td><?php echo $pages["intheend"]; ?></td>
-        <td><?php echo $pages["faint"]; ?></td>
-        <td><?php echo $pages["numb"]; ?></td>
-        <td><?php echo $pages["what"]; ?></td>
-        <td><?php echo $pages["favsong"]; ?></td>
-        <td><?php echo $pages["message"]; ?></td>
-    </tr>
-    <?php } ?>
+    <table border>
+        <tr>      
+            <th>Counter ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Crawling</th>
+            <th>In the End</th>
+            <th>Faint</th>
+            <th>Numb</th>
+            <th>What I've Done</th>
+            <th>Favorite Song</th>
+            <th>Reason</th>
+        </tr>
 
-</table>
+        <?php
+        while($pages = mysqli_fetch_assoc($result)) {
+        ?>
 
+        <tr>
+            <td><?php echo $pages["counter"]; ?></td>
+            <td><?php echo $pages["fname"]; ?></td>
+            <td><?php echo $pages["lname"]; ?></td>
+            <td><?php echo $pages["email"]; ?></td>
+            <td><?php echo $pages["crawling"]; ?></td>
+            <td><?php echo $pages["intheend"]; ?></td>
+            <td><?php echo $pages["faint"]; ?></td>
+            <td><?php echo $pages["numb"]; ?></td>
+            <td><?php echo $pages["what"]; ?></td>
+            <td><?php echo $pages["favsong"]; ?></td>
+            <td><?php echo $pages["message"]; ?></td>
+        </tr>
+        <?php } ?>
 
-<h2>Delete Entry</h2>
-<form method="post" action="admin-delete.php">
-    <p>Enter the counter ID of the entry you want to delete from the table above. Click 'Submit' to delete the entry.</p>
-    <label for="counter">Choose Counter ID:</label>
-    <input type="number" class="counter" name="counter" id="counter">
-    <input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
-</form>
+    </table>
+</div>
 
+<div class="admin" id="delete">
+    <h2>Delete Entry</h2>
+    <form method="post" action="admin-delete.php">
+        <p>Enter the counter ID of the entry you want to delete from the table above. Click 'Submit' to delete the entry.</p>
+        <label for="counter">Choose Counter ID:</label>
+        <input type="number" class="counter" name="counter" id="counter">
+        <input type="submit" name="submit" class="btn btn-primary" id="submit" value="Submit"> 
+    </form>
+</div>
 
-<h2>Update Entry</h2>
-<form method="post" action="admin-update.php">
-    <p>Enter the counter ID of the entry you want to update from the table above. Then fill out all the fields below with the values you want to update for the entry. Please re-enter original values for those values you do not want to change.</p>
-    <label for="counter">Choose Counter ID:</label>
-    <input type="number" class="counter" name="counter" id="counter">
-
-    <?php include "inc/survey.inc"; ?>
-
-</form>
+<div class="admin" id="update">
+    <h2>Update Entry</h2>
+    <form method="post" action="admin-update.php">
+        <p>Enter the counter ID of the entry you want to update from the table above. Then fill out all the fields below with the values you want to update for the entry. Please re-enter original values for those values you do not want to change.</p>
+        <label for="counter">Choose Counter ID:</label>
+        <input type="number" class="counter" name="counter" id="counter">
+        <?php include "inc/survey.inc"; ?>
+    </form>
+</div>
 
 <?php
 include "inc/bottom.inc";

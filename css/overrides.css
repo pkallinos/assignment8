@@ -1,22 +1,26 @@
 /* Styles for Survey Page */
 body{
 	background-color:#D5D5D5;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .heading{
 	text-align:center;
 	background-color:#6D7993;
 	color: ghostwhite;
-	margin:10px 30px 10px 30px;
+	margin: 70px 30px 10px 30px;
 	padding:10px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.summary h2, .albums h2, .survey h2{
+h2 {
 	background-color: #6D7993;
     color: ghostwhite;
 	padding:10px 20px;
@@ -32,7 +36,12 @@ h1, h2, h3, h4 {
 }
 
 h2 {
+    margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.summary h2, .survey h2, .admin h2 {
+    margin-top: 50px;
 }
 
 .row {
@@ -41,14 +50,14 @@ h2 {
     padding-bottom: 20px;
 }
 
-.survey, .albums, .summary{
-	margin:10px 30px 10px 30px;
+.survey, .albums, .summary, .admin {
+	margin: 10px 30px 10px 30px;
 	background-color: ghostwhite;
 	color: black;
 	padding:20px;
 }
 
-p, li, label{
+p, li, label {
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
     line-height: 1.75em;
@@ -90,7 +99,26 @@ img {
 
 /*End of Survey Styles */
 
+/* Admin styles */
 
+table {
+    margin-bottom: 20px;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+th, td {
+    max-width: 180px;
+    word-wrap: break-word;
+}
+
+/*End of Admin Styles*/
 
 .response {
 	padding-left: 25px;

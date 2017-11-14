@@ -50,28 +50,39 @@ $currentTitle = "Submission";
 include "inc/top.inc";
 ?>
 
-<div class="response">
-	<div class="row align-items-center">
-	    <div class="column col-md-12 col-sm-12 col-xs-12">
-	        <h2>Thank you <?php echo $_POST["first"]; ?> for your response.</h2>
-	    </div><!-- close column -->
-	</div><!-- close row -->
+<!-- Navigation -->
+<nav class="main-menu">
+    <span class="logo"><a href="#">CSC174 Assignment #8</a></span>
+    <ul>
+        <li><span>Go to: </span></li>
+        <li><a href="index.php">Index</a></li>
+    </ul>
+</nav>
 
-	<div class="row align-items-center">
-	    <div class="column col-md-12 col-sm-12 col-xs-12">
-		        <?php
-		        if ($result) {
-		            echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
-		        ?>
+<div class="admin">
+    <div class="response">
+        <div class="row align-items-center">
+            <div class="column col-md-12 col-sm-12 col-xs-12">
+                <h2>Thank you <?php echo $_POST["first"]; ?> for your response.</h2>
+            </div><!-- close column -->
+        </div><!-- close row -->
 
-		        <?php
-		        } else {
-		            die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
-		        }
-		        ?>
-		        <a href="index.php">Return to survey</a>
-	    </div><!-- close column -->
-	</div><!-- close row -->
+        <div class="row align-items-center">
+            <div class="column col-md-12 col-sm-12 col-xs-12">
+                <?php
+                if ($result) {
+                    echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
+                ?>
+
+                <?php
+                } else {
+                    die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
+                }
+                ?>
+                <a href="index.php">Return to survey</a>
+            </div><!-- close column -->
+        </div><!-- close row -->
+    </div>
 </div>
 
 <?php
