@@ -24,7 +24,7 @@ include "inc/top.inc";
     <span class="logo"><a href="#">CSC174 Assignment #8</a></span>
     <ul>
         <li><span>Go to: </span></li>
-        <li><a href="index.php">Index</a></li>
+        <li><a href="index.php">Survey</a></li>
         <li><a href="#table">Table</a></li>
         <li><a href="#delete">Delete</a></li>
         <li><a href="#update">Update</a></li>

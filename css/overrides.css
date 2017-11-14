@@ -102,11 +102,14 @@ img {
 /* Admin styles */
 
 table {
+    margin: 0 auto;
     margin-bottom: 20px;
+    width: 80%;
 }
 
 th {
     padding: 10px;
+    text-align: center;
 }
 
 td {
@@ -123,4 +126,10 @@ th, td {
 .response {
 	padding-left: 25px;
 	background-color: ghostwhite;
+}
+
+.container-fluid {
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
