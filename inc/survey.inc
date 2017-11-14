@@ -5,21 +5,21 @@
 <div class="form-group">
 <div class="col-md-6 mb-3">
 <label for="name">First Name:</label>
-<input type="text" class="form-control" name="first" id="firstname">
+<input type="text" class="form-control" name="first" id="firstname" required>
 </div>
 </div>
 
 <div class="form-group">
 <div class="col-md-6 mb-3">
 <label for="name">Last Name:</label>
-<input type="text" class="form-control"  name="last" id="lastname">
+<input type="text" class="form-control"  name="last" id="lastname" required>
 </div>
 </div>
 
 <div class="form-group">
 <div class="col-md-6 mb-3">
 <label for="email">Email:</label>
-<input type="email" class="form-control" name="email" id="email">
+<input type="email" class="form-control" name="email" id="email" required>
 </div>
 </div>
 
