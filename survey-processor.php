@@ -42,7 +42,6 @@ $result = mysqli_query($connection, $query);
 
 ?>
 
-<div class="success">
 <?php
 $currentTitle = "Thank you!";
 include "inc/top.inc";
@@ -56,7 +55,7 @@ include "inc/top.inc";
 
 <div class="row align-items-center">
     <div class="column col-md-12 col-sm-12 col-xs-12">
-        
+
         <?php
         if ($result) {
             echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
@@ -67,11 +66,9 @@ include "inc/top.inc";
             die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
         }
         ?>
-
         <a href="index.php">Return to survey</a>
     </div><!-- close column -->
 </div><!-- close row -->
-</div>
 
 <?php
 include "inc/bottom.inc";

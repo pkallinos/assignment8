@@ -14,14 +14,12 @@
 
 	
 
-	<!doctype html>
-	<html>
-	<head>
-		<title>Delete Entry</title>
-	</head>
-	<body>
+	<?php
+	$currentTitle = "Delete Database";
+	include "inc/top.inc";
+	?>
 
-		<h1>Status</h1>
+		<h2>Status</h2>
 		
 		<?php
 		if ($result) {
@@ -38,8 +36,9 @@
 
 		<a href="admin.php">Return to Admin Page</a>
 
-	</body>
-	</html>
+	<?php
+	include "inc/bottom.inc";
+	?>
 	
 
 <?php

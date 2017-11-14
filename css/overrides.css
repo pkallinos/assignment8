@@ -2,6 +2,10 @@ body{
 	background-color:#D5D5D5;
 }
 
+.container {
+    max-width: 1200px;
+}
+
 .success{
 	text-align:center;
 }
@@ -9,22 +13,15 @@ body{
 .heading{
 	text-align:center;
 	background-color:#6D7993;
-	color:#D5D5D5;
+	color: ghostwhite;
 	margin:10px 30px 10px 30px;
 	padding:10px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.nav{
-	display:inline-block;
-}
-
-.nav a{
-	text-align:center;
-}
-
 .summary h2, .albums h2, .survey h2{
-	background-color:#96858F;
+	background-color: #6D7993;
+    color: ghostwhite;
 	padding:10px 20px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing:2px;
@@ -35,29 +32,42 @@ h1, h2, h3, h4, h5 {
 	letter-spacing:2px;
 }
 
+h2 {
+    margin-bottom: 25px;
+}
+
+.row {
+    width: 100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
 .survey, .albums, .summary{
 	margin:10px 30px 10px 30px;
-	background-color:#9099A2;
-	color:#D5D5D5;
+	background-color: ghostwhite;
+	color: black;
 	padding:20px;
 }
 
 p, li, label{
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
+    line-height: 1.75em;
+    font-size: 18px;
+}
 
+img {
+    width: 100%;
+    padding: 20px;
 }
 
 .page-footer{
 	background-color:#6D7993;
-	color:#D5D5D5;
+	color: ghostwhite;
 	margin:10px 30px 10px 30px;
 	padding:10px;
 }
 
 .page-footer a{
 	color:#D5D5D5;
-}
-
-@media (max-width: 1000px) {
 }
