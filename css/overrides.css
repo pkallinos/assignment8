@@ -1,13 +1,10 @@
+/* Styles for Survey Page */
 body{
 	background-color:#D5D5D5;
 }
 
 .container {
     max-width: 1200px;
-}
-
-.success{
-	text-align:center;
 }
 
 .heading{
@@ -91,7 +88,11 @@ img {
 	padding-left: 25px;
 }
 
-.title {
-	padding-left: 20px;
-	font-size: 26px;
+/*End of Survey Styles */
+
+
+
+.response {
+	padding-left: 25px;
+	background-color: ghostwhite;
 }

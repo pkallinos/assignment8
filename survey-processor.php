@@ -1,4 +1,6 @@
+<!-- Database connecting, processing and inserting data -->
 <?php
+error_reporting(0);
 $dbhost = "localhost";
 $dbuser = "urcscon3_shangha";
 $dbpass = "coffee1N";
@@ -42,37 +44,40 @@ $result = mysqli_query($connection, $query);
 
 ?>
 
+<!-- Submission Page -->
 <?php
-$currentTitle = "Thank you!";
+$currentTitle = "Submission";
 include "inc/top.inc";
 ?>
 
-<div class="row align-items-center">
-    <div class="column col-md-12 col-sm-12 col-xs-12">
-        <h2>Thank you <?php echo $_POST["first"]; ?> for your response.</h2>
-    </div><!-- close column -->
-</div><!-- close row -->
+<div class="response">
+	<div class="row align-items-center">
+	    <div class="column col-md-12 col-sm-12 col-xs-12">
+	        <h2>Thank you <?php echo $_POST["first"]; ?> for your response.</h2>
+	    </div><!-- close column -->
+	</div><!-- close row -->
 
-<div class="row align-items-center">
-    <div class="column col-md-12 col-sm-12 col-xs-12">
+	<div class="row align-items-center">
+	    <div class="column col-md-12 col-sm-12 col-xs-12">
+		        <?php
+		        if ($result) {
+		            echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
+		        ?>
 
-        <?php
-        if ($result) {
-            echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";
-        ?>
-
-        <?php
-        } else {
-            die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
-        }
-        ?>
-        <a href="index.php">Return to survey</a>
-    </div><!-- close column -->
-</div><!-- close row -->
+		        <?php
+		        } else {
+		            die("<p>ERROR: Failed to record answers. Please return and try again.</p>");
+		        }
+		        ?>
+		        <a href="index.php">Return to survey</a>
+	    </div><!-- close column -->
+	</div><!-- close row -->
+</div>
 
 <?php
 include "inc/bottom.inc";
 ?>
+<!-- End of Submission Page -->
 
 <?php
 // 5. Close database connection

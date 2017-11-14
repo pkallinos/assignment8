@@ -233,10 +233,12 @@ include "inc/top.inc";
             </div>
             <!--/.Second column-->
 
-            	<div class="credits">
-	                <p>CSC 174 Project 8 Team Shanghai</p>
-	                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
-	            </div>
+            <!-- Our names -->	
+        	<div class="credits">
+                <p>CSC 174 Project 8 Team Shanghai</p>
+                <p>© 2017 Copyright: Michelle Bushoy, Jerry Dai, Philip Kallinos, Daniella Bloom </p>
+            </div>
+            <!--/.Our names -->
         </div>
     </div>
     <!--/.Footer Links-->
