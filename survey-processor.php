@@ -68,7 +68,7 @@ include "inc/top.inc";
         </div><!-- close row -->
 
         <div class="row align-items-center">
-            <div class="column col-md-12 col-sm-12 col-xs-12">
+            <div class="column col-md-12 col-sm-12 col-xs-12 thanks">
                 <?php
                 if ($result) {
                     echo "<p>SUCCESS: Submission was a success! Thank you again for completing the survey.</p>";

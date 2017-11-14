@@ -33,21 +33,22 @@ include "inc/top.inc";
 
     <h2>Status</h2>
 
-    <?php
-    if ($result) {
-    ?>
-    <p>
-        Record #<?php echo $_POST['counter'] ?> has been deleted successfully! Thank you for your changes.
-    </p>
+    <div class="thanks">
+        <?php
+        if ($result) {
+        ?>
+        <p>
+            Record #<?php echo $_POST['counter'] ?> has been deleted successfully! Thank you for your changes.
+        </p>
 
-    <?php
-    } else {
-        die("<p>ERROR: Database query failed. Please go back and try again.</p>");
-    }
-    ?>
+        <?php
+        } else {
+            die("<p>ERROR: Database query failed. Please go back and try again.</p>");
+        }
+        ?>
 
-    <a href="admin.php">Return to Admin Page</a>
-
+        <a href="admin.php">Return to Admin Page</a>
+    </div>
 </div>
 
 <?php
